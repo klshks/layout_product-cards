@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-.card-content {
+.card {
   box-sizing: border-box;
   width: $card-width;
   height: $card-height;
@@ -81,25 +81,33 @@ body {
     }
   }
 
-  &__button {
+  &__tab {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: $price-width;
     height: $button-height;
-    border-radius: 5px;
-    border: none;
+    margin: 0 0 $spacing-md $spacing-md;
+
+    box-sizing: border-box;
+
     background-color: $color-primary;
-    color: $color-white;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+
     font-family: $font-main;
     font-weight: $font-weight-bold;
     font-size: $font-size-md;
-    margin: 0 0 $spacing-md $spacing-md;
+    line-height: $button-height;
+
+    color: $color-white;
+    text-decoration: none;
+
     cursor: pointer;
 
     &:hover {
       background-color: $color-white;
-      border: 1px solid $color-primary;
       color: $color-primary;
     }
   }
